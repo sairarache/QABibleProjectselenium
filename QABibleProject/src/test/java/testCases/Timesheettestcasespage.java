@@ -17,8 +17,8 @@ public class Timesheettestcasespage extends Baseclass {
 	@Test
 	public void verifythetooltipvalueofTimesheetPage() throws IOException {
 		Loginpage lp = new Loginpage(driver);
-		lp.enterUsername(ExcelRead.readStringDatafromExcel(3, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(3, 1));
+		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
+		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
 		lp.clickLogin();
 		Timesheetpage tp = new Timesheetpage(driver);
 		tp.navigatetoTimesheetpage();
