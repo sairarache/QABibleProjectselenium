@@ -1,0 +1,31 @@
+<suite name="Grouping suite">
+	<listeners>
+		<listener class-name="utilities.ExtentreportUtility" />
+	</listeners>
+	<test name="Grouping Test">
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Critical">
+				</include>
+				<include name="High">
+				</include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.Loginpagetestcase"></class>
+		</classes>
+		<parameter name="browser" value="Edge"></parameter>
+		<groups>
+			<run>
+				<include name="Critical">
+				</include>
+				<include name="High">
+				</include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.Loginpagetestcase"></class>
+		</classes>
+	</test>
+</suite>
