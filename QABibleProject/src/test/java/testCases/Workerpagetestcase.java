@@ -18,7 +18,7 @@ public class Workerpagetestcase extends Baseclass
   {
 	  Loginpage lp=new Loginpage(driver);
 	  lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-	  lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+	  lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 	  lp.clickLogin();
 	  Workerpage wp=new Workerpage(driver);
 	  wp.navigateWorker();
