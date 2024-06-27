@@ -15,7 +15,7 @@ public class Clientpagetestcases extends Baseclass {
 	public void verifythecheckboxRequirepoinCreateClientsubpage() throws IOException {
 		Loginpage lp = new Loginpage(driver);
 		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Clientpage cp = new Clientpage(driver);
 		cp.navigatetoClientpage();
@@ -33,7 +33,7 @@ public class Clientpagetestcases extends Baseclass {
 	public void verifybackgroundcolourofSearchbuttoninclientpage() throws IOException {
 		Loginpage lp = new Loginpage(driver);
 		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Clientpage cp = new Clientpage(driver);
 		cp.navigatetoClientpage();
@@ -49,7 +49,7 @@ public class Clientpagetestcases extends Baseclass {
 	public void verifythetooltipvalueofEditiconinClientspage() throws IOException {
 		Loginpage lp = new Loginpage(driver);
 		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Clientpage cp = new Clientpage(driver);
 		cp.navigatetoClientpage();
