@@ -18,7 +18,7 @@ public class Timesheettestcasespage extends Baseclass {
 	public void verifythetooltipvalueofTimesheetPage() throws IOException {
 		Loginpage lp = new Loginpage(driver);
 		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Timesheetpage tp = new Timesheetpage(driver);
 		tp.navigatetoTimesheetpage();
@@ -33,8 +33,8 @@ public class Timesheettestcasespage extends Baseclass {
 	@Test
 	public void verifythedetailsofuserinTimesheetPage() throws IOException {
 		Loginpage lp = new Loginpage(driver);
-		lp.enterUsername(ExcelRead.readStringDatafromExcel(3, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(3, 1));
+		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Timesheetpage tp = new Timesheetpage(driver);
 		tp.navigatetoTimesheetpage();
@@ -48,8 +48,8 @@ public class Timesheettestcasespage extends Baseclass {
 	@Test
 	public void verifytheDynamicvalueofUser() throws IOException {
 		Loginpage lp = new Loginpage(driver);
-		lp.enterUsername(ExcelRead.readStringDatafromExcel(3, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(3, 1));
+		lp.enterUsername(ExcelRead.readStringDatafromExce(2, 0));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Timesheetpage tp = new Timesheetpage(driver);
 		tp.navigatetoTimesheetpage();
@@ -64,8 +64,8 @@ public class Timesheettestcasespage extends Baseclass {
 	@Test
 	public void verifyEditpageDropdownvalues() throws IOException {
 		Loginpage lp = new Loginpage(driver);
-		lp.enterUsername(ExcelRead.readStringDatafromExcel(3, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(3, 1));
+		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Timesheetpage tp = new Timesheetpage(driver);
 		tp.navigatetoTimesheetpage();
@@ -82,7 +82,7 @@ public class Timesheettestcasespage extends Baseclass {
 	public void verifytheDirectclientCheckboxisSelected() throws IOException {
 		Loginpage lp = new Loginpage(driver);
 		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Timesheetpage tp = new Timesheetpage(driver);
 		tp.navigatetoTimesheetpage();
@@ -101,7 +101,7 @@ public class Timesheettestcasespage extends Baseclass {
 	{
 		Loginpage lp = new Loginpage(driver);
 		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Timesheetpage tp = new Timesheetpage(driver);
 		tp.navigatetoTimesheetpage();
