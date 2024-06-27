@@ -16,7 +16,7 @@ public class Deductionpagetestcase extends Baseclass {
 	public void verifywhetheradddeductionpageTypefieldworksproperly() throws IOException {
 		Loginpage lp = new Loginpage(driver);
 		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Deductionpage dp = new Deductionpage(driver);
 		dp.navigatetoDeductionpage();
@@ -31,7 +31,7 @@ public class Deductionpagetestcase extends Baseclass {
 	{
 		Loginpage lp = new Loginpage(driver);
 		lp.enterUsername(ExcelRead.readStringDatafromExcel(2, 0));
-		lp.enterPassword(ExcelRead.readStringPasswordData(2, 1));
+		lp.enterPassword(ExcelRead.readStringDatafromExcel(2, 1));
 		lp.clickLogin();
 		Deductionpage dp = new Deductionpage(driver);
 		dp.navigatetoDeductionpage();
