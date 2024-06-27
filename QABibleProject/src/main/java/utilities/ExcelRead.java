@@ -29,7 +29,7 @@ public class ExcelRead
 
 	}
 
-	public static String readStringPasswordData(int row,int col) throws IOException
+	public static String readIntegerData(int row,int col) throws IOException
 	 {   		
 		 File loc2=new File(System.getProperty("user.dir")+"\\src\\test\\resources\\ExcelRead\\Exceltestdata.xlsx");
 		 f=new FileInputStream(loc2);
@@ -37,7 +37,7 @@ public class ExcelRead
 		 sh=w.getSheet("login");
 		 XSSFRow r=sh.getRow(row);
 		 XSSFCell d=r.getCell(col);
-		 String x=(String) d.getStringCellValue();
+		 int x=(int) d.getNumericCellValue();
 		 return String.valueOf(x);
 	 }
 	 
